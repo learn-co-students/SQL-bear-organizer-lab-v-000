@@ -16,11 +16,14 @@ def selects_oldest_bear_and_returns_name_and_age
 end
 
 def select_youngest_bear_and_returns_name_and_age
-  "SELECT name, MIN(age) FROM bears;"
+  # "SELECT name, MAX(age) FROM bears;"
+  "SELECT name, age FROM bears ORDER BY age ASC LIMIT 1"
 end
 
 def selects_most_prominent_color_and_returns_with_count
-  "SELECT MAX(color), 3 FROM bears;"
+  # "SELECT MAX(color), 3 FROM bears;"
+  # "SELECT MAX(color), COUNT(color) FROM bears GROUP BY color ORDER BY MAX(color) DESC LIMIT 1" <- this code passed the test, but is incorrect
+  "SELECT color, COUNT(color) FROM bears GROUP BY color ORDER BY COUNT(*) DESC LIMIT 1"
 end
 
 def counts_number_of_bears_with_goofy_temperaments
