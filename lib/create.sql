@@ -5,6 +5,6 @@ CREATE TABLE bears (
   gender TEXT,
   color TEXT,
   temperament TEXT,
-  alive TEXT
+  alive INTEGER
   );
 
