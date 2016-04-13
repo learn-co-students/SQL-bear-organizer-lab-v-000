@@ -23,8 +23,9 @@ This lab might seem a bit different than what you've seen before. Take a look at
 │   └── sql_runner.rb # holds a class that handles executing your .sql files
 ├── lib
 │   ├── create.sql # where you create your schema
-│   ├── decoded_data.sql # this file we're using to run the tests
 │   └── insert.sql # where you insert your data
+│   └── seed.sql # data for in-memory database
+│   └── sql_queries.rb # where you write your sql queries
 └── spec # all the specs
     ├── create_spec.rb # this tests your create.sql file
     ├── insert_spec.rb # this tests your insert.sql file
@@ -87,8 +88,13 @@ Get the tests in `spec/insert_spec.rb` to pass. Input the following 8 bears (you
 
 ## Part 3: `SELECT`
 
-Get the tests in `spec/select_spec.rb` to pass. Note that for this section, the database will be seeded with external data from the `lib/seed.sql` file so don't expect it to reflect the data you added above. Write your queries as strings in the `sql_queries.rb`.
+Get the tests in `spec/select_spec.rb` to pass. Note that for this section, the database will be seeded with external data from the `lib/seed.sql` file so don't expect it to reflect the data you added above. Note: Since it's a Ruby file, write your queries as strings in the `lib/sql_queries.rb`.
+
+You may be expected to use SQL statements that you're not particularly familiar with. Make sure you use the resources and Google to find the right statements. 
 
 ## Resources
 
-[SQL Datatypes](http://www.w3schools.com/sql/sql_datatypes_general.asp)
+[SQL Datatypes](https://www.sqlite.org/datatype3.html)
+[SQL GROUP BY](https://www.sqlite.org/lang_select.html#resultset)
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/SQL-bear-organizer-lab' title='SQL Bear Organizer'>SQL Bear Organizer</a> on Learn.co and start learning to code for free.</p>
