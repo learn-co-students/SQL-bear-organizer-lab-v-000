@@ -22,7 +22,7 @@ class SQLRunner
   end
 
   def execute_data
-    sql = File.read('lib/seed.sql')
+    sql = File.read("lib/seed.sql")
     @db.execute_batch(sql)
   end
 end
