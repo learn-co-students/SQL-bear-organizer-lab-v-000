@@ -1,3 +1,4 @@
+require 'pry'
 describe 'querying the bears table' do
   before do
     @db = SQLite3::Database.new(':memory:')
@@ -10,6 +11,7 @@ describe 'querying the bears table' do
   end
 
   it 'selects all of the female bears and returns their name and age' do
+    # binding.pry
     expect(@db.execute(selects_all_female_bears_return_name_and_age)).to eq([["Tabitha", 6],["Melissa", 13], ["Wendy", 6]])
   end
 
