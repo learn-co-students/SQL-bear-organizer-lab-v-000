@@ -30,6 +30,7 @@ describe 'querying the bears table' do
   end
 
   it 'selects the most prominent color and returns it with its count' do
+
     expect(@db.execute(selects_most_prominent_color_and_returns_with_count)).to eq([["dark brown", 3]])
   end
 
