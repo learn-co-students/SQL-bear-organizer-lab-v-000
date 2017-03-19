@@ -14,7 +14,7 @@ describe 'querying the bears table' do
   end
 
   it 'selects all of the bears names and orders them in alphabetical order' do
-    expect(@db.execute(selects_all_bears_names_and_orders_in_alphabetical_order)).to eq([[nil],["Grinch"],["Melissa"],["Mr. Chocolate"],["Rowdy"],["Sargeant Brown"],["Tabitha"],["Wendy"]])
+    expect(@db.execute(selects_all_bears_names_and_orders_in_alphabetical_order)).to eq([[nil],["Grinch"],["Melissa"],["Mr. Chocolate"],["Rowdy"],["Sergeant Brown"],["Tabitha"],["Wendy"]])
   end
 
   it 'selects all of the bears names and ages that are alive and order them from youngest to oldest' do

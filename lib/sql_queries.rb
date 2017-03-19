@@ -1,31 +1,31 @@
 def selects_all_female_bears_return_name_and_age
-  "Write your SQL query here"
+  "SELECT name, age FROM bears WHERE gender = 'F';"
 end
 
 def selects_all_bears_names_and_orders_in_alphabetical_order
-  "Write your SQL query here"
+  "SELECT name FROM BEARS ORDER BY name;"
 end
 
 def selects_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest
-  "Write your SQL query here"
+  "SELECT name, age FROM bears WHERE alive = 1 ORDER BY age ASC;" #bears.name, bears.age = name, age. ASC is already default.
 end
 
 def selects_oldest_bear_and_returns_name_and_age
-  "Write your SQL query here"
+  "SELECT name, MAX(age) FROM bears;"
 end
 
 def select_youngest_bear_and_returns_name_and_age
-  "Write your SQL query here"
+  "SELECT name, MIN(age) FROM bears;"
 end
 
 def selects_most_prominent_color_and_returns_with_count
-  "Write your SQL query here"
+  "SELECT color, COUNT(color) FROM bears GROUP BY color ORDER BY MAX(color) DESC LIMIT 1;" #Yikes.
 end
 
 def counts_number_of_bears_with_goofy_temperaments
-  "Write your SQL query here"
+  "SELECT COUNT(temperament) FROM bears WHERE temperament = 'goofy';"
 end
 
-def selects_bear_that_killed_Tim
-  "Write your SQL query here"
+def selects_bear_that_killed_Tim #Uh. That's just kind of fucked up.
+  "select * from bears where temperament = 'aggressive';"
 end
