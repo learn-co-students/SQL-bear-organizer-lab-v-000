@@ -1,5 +1,5 @@
 # A sample Gemfile
-source "https://rubygems.org"
+source "http://rubygems.org"
 
 # Database
 gem 'sqlite3'
@@ -9,3 +9,6 @@ gem 'rspec'
 
 # Debugging
 gem 'pry'
+
+
+
