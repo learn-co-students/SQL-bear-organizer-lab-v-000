@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+sqlite3 woodlands.db < ./queries/query.sql
