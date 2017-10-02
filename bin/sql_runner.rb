@@ -1,3 +1,5 @@
+#this class handles the execution of running the sql
+
 require_relative 'environment'
 require 'pry'
 
