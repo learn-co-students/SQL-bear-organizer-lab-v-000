@@ -1,8 +1,8 @@
-SELECT name, age FROM cats;
-SELECT * FROM cats WHERE name = "Maru";
-SELECT * FROM cats WHERE age < 2;
+#SELECT name, age FROM cats;
+#SELECT * FROM cats WHERE name = "Maru";
+#SELECT * FROM cats WHERE age < 2;
 def selects_all_female_bears_return_name_and_age
-  "SELECT name, age FROM bears where gender= F;"
+  "SELECT name, age FROM bears where gender = 'F';"
 end
 
 def selects_all_bears_names_and_orders_in_alphabetical_order
@@ -22,14 +22,15 @@ def select_youngest_bear_and_returns_name_and_age
   "SELECT name, age FROM bears ORDER BY age ASC LIMIT 1;"
 end
 
-def selects_most_prominent_color_and_returns_with_count
-  "Write your SQL query here"
+def selects_most_prominent_color_and_returns_with_count #want it to return the count of the most popular one
+  "SELECT color, COUNT(color) FROM bears GROUP BY color ORDER BY COUNT(*) DESC LIMIT 1;" #this gives the count of all colors.
 end
 
 def counts_number_of_bears_with_goofy_temperaments
-  "Write your SQL query here"
+  "SELECT COUNT(temperament) FROM bears WHERE temperament = 'goofy';"
+  #SELECT COUNT(temperament) FROM bears LIMIT 1
 end
 
 def selects_bear_that_killed_Tim
-  "Write your SQL query here"
+  "SELECT * FROM bears WHERE name IS NULL;"
 end
