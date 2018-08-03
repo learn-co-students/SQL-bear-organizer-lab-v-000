@@ -1,23 +1,9 @@
-INSERT INTO bears (name, age, gender, color, temperament, alive)
-  VALUES ('Mr. Chocolate', 4, 'M', 'Dark Brown', 'Relaxed', 1);
-
-INSERT INTO bears (name, age, gender, color, temperament, alive)
-  VALUES ('Rowdy', 6, 'M', 'Light Brown', 'Nervous', 1);
-
-INSERT INTO bears (name, age, gender, color, temperament, alive)
-  VALUES ('Tabitha', 3, 'F', 'Black', 'Easy', 0);
-
-INSERT INTO bears (name, age, gender, color, temperament, alive)
-  VALUES ('Sergeant Brown', 7, 'M', 'Light Brown', 'Difficult', 1);
-
-INSERT INTO bears (name, age, gender, color, temperament, alive)
-  VALUES ('Melissa', 3, 'F', 'Black', 'Slow', 1);
-
-INSERT INTO bears (name, age, gender, color, temperament, alive)
-  VALUES ('Grinch', 8, 'M', 'Black', 'Fussy', 0);
-
-INSERT INTO bears (name, age, gender, color, temperament, alive)
-  VALUES ('Wendy', 4, 'F', 'Brown', 'Positive', 1);
-
-INSERT INTO bears (name, age, gender, color, temperament, alive)
-  VALUES (NULL, 2, 'M', 'White', 'Negative', 1);
+INSERT INTO bears (id, name, age, gender, color, temperament, alive) VALUES
+(1,"Mr. Chocolate", 20, "M", "dark brown", "calm", 0),
+(2,"Rowdy", 10, "M", "black", "intense", 1),
+(3,"Tabitha", 6, "F", "dark brown", "Nice", 1),
+(4,"Sargeant Brown", 19, "M", "Green", "Slimy", 0),
+(5,"Melissa", 13, "F", "dark brown", "goofy", 1),
+(6,"Grinch", 2, "M", "Black", "Grinchy", 1),
+(7,"Wendy", 6, "F", "Blue", "naive", 1),
+(8,null, 20, "M", "black", "aggressive", 0);
