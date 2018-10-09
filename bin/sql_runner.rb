@@ -9,6 +9,7 @@ class SQLRunner
   def execute_create_file
     sql = File.read("lib/create.sql")
     @db.execute_batch(sql)
+    # @db = lab_database.db
   end
 
   def execute_insert_file
