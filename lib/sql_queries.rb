@@ -25,7 +25,9 @@ def selects_most_prominent_color_and_returns_with_count
   #{}"SELECT color, COUNT() FROM bears WHERE color LIKE MAX(color); "
   #{}"SELECT color FROM bears where color LIKE 'MAX(color)'"
   #{}"SELECT MAX(color), COUNT(DISTINCT color) FROM bears"
-  "SELECT color, COUNT(color) WHERE color LIKE 'MAX(color)'"
+  #{}"SELECT color, COUNT() FROM bears WHERE color LIKE 'MAX(color)';"
+  #{}"SELECT MAX(color), AVG(color) FROM bears"
+  "SELECT MAX(color), COUNT('DISTINCT MAX(color)') FROM bears;"
 end
 
 def counts_number_of_bears_with_goofy_temperaments
