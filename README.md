@@ -11,7 +11,7 @@
 3. Use the `SELECT` command with various functions and modifiers to write queries
 
 ## Lab Structure
-
+ 
 This lab might seem a bit different than what you've seen before. Take a look at the file structure:
 
 ```bash
