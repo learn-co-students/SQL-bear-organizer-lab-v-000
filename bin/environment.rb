@@ -1,3 +1,5 @@
+# requires bundler and files
+
 require 'bundler/setup'
 require 'base64'
 
