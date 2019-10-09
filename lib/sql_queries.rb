@@ -27,5 +27,9 @@ def counts_number_of_bears_with_goofy_temperaments
 end
 
 def selects_bear_that_killed_Tim
-  "SELECT id,name,age,gender,color,temperament,alive FROM bears WHERE name is null;"
+   <<-SQL
+  SELECT *
+  FROM bears
+  WHERE name is null
+  SQL
 end
