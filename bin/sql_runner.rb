@@ -1,3 +1,5 @@
+# holds a class that handles executing the .sql files. Help to connect to databas.
+
 require_relative 'environment'
 require 'pry'
 
